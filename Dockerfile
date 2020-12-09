@@ -5,7 +5,7 @@ RUN apt-get install openjdk-8-jdk -y
 RUN apt-get install maven -y
 WORKDIR /usr/app
 COPY . .
-RUN mvn clean install
+RUN ./mvnw install
 WORKDIR /usr/app/target
 RUN ls -la
 RUN sh -c 'touch gcpcloudrunback-0.0.1-SNAPSHOT.jar'
