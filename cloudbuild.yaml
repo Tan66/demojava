@@ -1,5 +1,7 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '-t', 'gcr.io/bsudevsecops/java-service-image:latest', '.']
+      args: ['build', '-t', '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest', '.']
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['push', 'gcr.io/bsudevsecops/java-service-image:latest']
+      args: ['push', '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest']
+      
+    
