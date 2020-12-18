@@ -5,3 +5,4 @@ steps:
       args: ['push', 'gcr.io/proud-structure-298810/demo-java:latest']
     - name: 'gcr.io/cloud-builders/gcloud'
       args: ['app', 'deploy']
+    timeout: '1600s'
