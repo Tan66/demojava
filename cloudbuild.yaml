@@ -3,4 +3,5 @@ steps:
       args: ['build', '-t', 'gcr.io/proud-structure-298810/demo-java:latest', '.']
     - name: 'gcr.io/cloud-builders/docker'
       args: ['push', 'gcr.io/proud-structure-298810/demo-java:latest']
-    
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args: ['app', 'deploy']
