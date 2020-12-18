@@ -1,6 +1,6 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '-t', 'gcr.io/master-coder-297316/java-search-service-image:latest', '.']
+      args: ['build', '-t', 'gcr.io/proud-structure-298810/demo-java:latest', '.']
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['push', 'gcr.io/master-coder-297316/java-search-service-image:latest']
+      args: ['push', 'gcr.io/proud-structure-298810/demo-java:latest']
     
